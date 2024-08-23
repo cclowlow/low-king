@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>有趣的音樂播放页面</title>
+    <style>
+      /* 重置默认样式 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: #32635f;
+        color: white;
+        padding: 1em 0;
+      ;
+      }
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(135deg, #f6f5f7 0%, #e9e9e9 100%);
+        color: #333;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .player {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      .player h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #a04379;
+      }
+
+      .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .controls button {
+        background: #a04379;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .controls button:hover {
+        background: #8a3b6b;
+      }
+
+      /* 动画效果 */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  <header>
+     <a href="index.html">返回主页</a>
+    </header>
+  <body>
+    <div class="player">
+      <h1>有趣的音樂播放器</h1>
+      <div class="controls">
+        <button onclick="playPause()">播放/暂停</button>
+      </div>
+      <audio id="audio" src="think of me.wav"></audio>
+    </div>
+
+    <script>
+      let audio = document.getElementById("audio");
+
+      function playPause() {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+    </script>
+  </body>
+</html>
