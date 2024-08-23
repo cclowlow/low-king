@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cclowlow</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f5f7;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      header {
+        background-color: #14cfc0;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+      }
+      main {
+        display: flex;
+        flex: 1;
+      }
+      .sidebar {
+        width: 150px; /* 调整侧边栏宽度 */
+        background-color: #333;
+        color: rgb(156, 71, 71);
+        padding: 1em;
+        overflow-y: auto; /* 添加滚动条 */
+      }
+      .sidebar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 0.5em 0;
+      }
+      .sidebar a:hover {
+        background-color: #555;
+      }
+      .content {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+        max-width: 800px; /* 限制最大宽度 */
+        margin: 0 auto; /* 居中对齐 */
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        width: 100%;
+        bottom: 0;
+      }
+      img {
+        max-width: 100%; /* 图片最大宽度为100% */
+        height: auto; /* 高度自适应 */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>欢迎来到cclowlow之家</h1>
+    </header>
+    <main>
+      <div class="sidebar">
+        <h3>想不想听听歌曲</h3>
+        <ul>
+          <li><a href="think of me.html">think of me</a></li>
+          <li><a href="猴戏.html">猴戏</a></li>
+          <li><a href="底牌.html">底牌</a></li>
+          <li><a href="吃不起.html">吃不起汉堡</a></li>
+          <li><a href="看美女.html">看看美女</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2>煎饼果子</h2>
+        <p>
+          毫无疑问，煎饼果子是cclowlow最喜欢的食物之一，我当然指的是东北煎饼果子，称得上是无敌的美食
+        </p>
+        <img src="OIP-C.jfif" alt="你也喜欢吃煎饼果子吗" />
+        <p>
+          访问
+          <a href="https://space.bilibili.com/90591493?spm_id_from=333.788.0.0"
+            >cc之家</a
+          >
+          了解更多信息。
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>版权所有 &copy; 2024 cclowlow</p>
+    </footer>
+  </body>
+</html>
